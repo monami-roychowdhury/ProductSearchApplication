@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="8dp"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:src="@color/grey"/>
+
+    <TextView
+        android:id="@+id/productNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="18dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        tools:text="Product Name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/currentPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productNameText"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        tools:text="2000"
+        android:textSize="16sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/strikePriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPriceText"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        tools:text="1000"
+        android:textSize="14sp"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/discountPercentageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPriceText"
+        android:layout_toEndOf="@+id/strikePriceText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        tools:text="50%"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/pink_rectangle"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"/>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strikePriceText"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        tools:text="Location"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_location" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationText"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        style="@android:style/Widget.Material.RatingBar.Small"/>
+
+    <TextView
+        android:id="@+id/ratingCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationText"
+        android:layout_toEndOf="@+id/ratingBar"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        tools:text="(100)"
+        android:textSize="12sp"
+        android:textColor="@color/grey" />
+
+    <Button
+        android:id="@+id/actionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Add to Cart"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

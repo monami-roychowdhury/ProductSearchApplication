@@ -1,0 +1,1 @@
+This project is built using MVVM architecture with Kotlin. It uses Retrofit library for networking and fetches a list of data to display using Paging 3 library. Hilt is used for dependency injection.
